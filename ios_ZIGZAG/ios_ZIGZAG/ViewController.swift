@@ -17,5 +17,3 @@ class ViewController: UIViewController {
 
 }
 
-var hello = 1
-
