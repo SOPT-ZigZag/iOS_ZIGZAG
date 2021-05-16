@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoreViewController" customModule="ios_ZIGZAG" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스토어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="To0-rp-WLm">
+                    <rect key="frame" x="184.5" y="437.5" width="45" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ux-eJ-Yxy">
+                    <rect key="frame" x="373" y="48" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="jkb-Gc-bcK"/>
+                        <constraint firstAttribute="width" constant="24" id="zE9-6v-Ukd"/>
+                    </constraints>
+                    <state key="normal" image="ic_장바구니"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8l-5M-8un">
+                    <rect key="frame" x="346" y="51" width="20" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="PPr-xt-RyY"/>
+                        <constraint firstAttribute="height" constant="19" id="Saa-0k-1Dh"/>
+                    </constraints>
+                    <state key="normal" image="ic_돋보기"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smk-R1-xUP">
+                    <rect key="frame" x="315" y="48" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="609-lZ-lYc"/>
+                        <constraint firstAttribute="width" constant="24" id="eHo-Hg-xH1"/>
+                    </constraints>
+                    <state key="normal" image="ic_해시태그"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스토어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5V-J0-LQu">
+                    <rect key="frame" x="14" y="51" width="47" height="22"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Smk-R1-xUP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="48" id="4Yg-re-nrc"/>
+                <constraint firstItem="t5V-J0-LQu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="14" id="B7x-DG-xO1"/>
+                <constraint firstItem="4ux-eJ-Yxy" firstAttribute="leading" secondItem="f8l-5M-8un" secondAttribute="trailing" constant="7" id="LjL-0C-l0p"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4ux-eJ-Yxy" secondAttribute="trailing" constant="17" id="Lk0-rj-2w4"/>
+                <constraint firstItem="4ux-eJ-Yxy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="48" id="OgL-u3-J9z"/>
+                <constraint firstItem="t5V-J0-LQu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="51" id="XL6-mJ-gFZ"/>
+                <constraint firstItem="To0-rp-WLm" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="jLE-dt-4bp"/>
+                <constraint firstItem="f8l-5M-8un" firstAttribute="leading" secondItem="Smk-R1-xUP" secondAttribute="trailing" constant="7" id="xEv-rB-2HB"/>
+                <constraint firstItem="To0-rp-WLm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yMP-bo-29I"/>
+                <constraint firstItem="f8l-5M-8un" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="51" id="zU7-yA-hhS"/>
+            </constraints>
+            <point key="canvasLocation" x="88" y="100"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_돋보기" width="20" height="19"/>
+        <image name="ic_장바구니" width="24" height="24"/>
+        <image name="ic_해시태그" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

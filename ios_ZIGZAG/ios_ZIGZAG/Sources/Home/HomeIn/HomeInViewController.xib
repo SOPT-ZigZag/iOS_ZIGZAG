@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeInViewController" customModule="ios_ZIGZAG" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zI-dm-lWJ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="soy-Vy-rA8">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1000" id="VjJ-MC-O6y"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="soy-Vy-rA8" secondAttribute="trailing" id="Jzx-Kw-ae8"/>
+                        <constraint firstItem="soy-Vy-rA8" firstAttribute="leading" secondItem="7zI-dm-lWJ" secondAttribute="leading" id="N8s-jC-CCg"/>
+                        <constraint firstItem="soy-Vy-rA8" firstAttribute="top" secondItem="7zI-dm-lWJ" secondAttribute="top" id="h1L-Fx-TZI"/>
+                        <constraint firstAttribute="bottom" secondItem="soy-Vy-rA8" secondAttribute="bottom" id="nw9-H1-JyR"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <constraints>
+                <constraint firstItem="soy-Vy-rA8" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="3gI-P8-eQy"/>
+                <constraint firstItem="7zI-dm-lWJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9eJ-wh-Mz2"/>
+                <constraint firstItem="7zI-dm-lWJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NbN-B5-2dm"/>
+                <constraint firstAttribute="bottom" secondItem="7zI-dm-lWJ" secondAttribute="bottom" id="rBa-W2-heS"/>
+                <constraint firstItem="7zI-dm-lWJ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="xo1-2N-2jz"/>
+            </constraints>
+            <point key="canvasLocation" x="34.782608695652179" y="75.669642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
