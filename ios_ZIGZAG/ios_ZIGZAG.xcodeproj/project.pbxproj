@@ -38,6 +38,9 @@
 		772F58D8265199C4008DE687 /* HomeBigCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772F58D6265199C4008DE687 /* HomeBigCollectionViewCell.swift */; };
 		772F58D9265199C4008DE687 /* HomeBigCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772F58D7265199C4008DE687 /* HomeBigCollectionViewCell.xib */; };
 		772F58DD26519C45008DE687 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772F58DC26519C45008DE687 /* UIFont.swift */; };
+		E886C7402653F82E0092CA2F /* ItemDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E886C73F2653F82E0092CA2F /* ItemDataModel.swift */; };
+		E886C750265404ED0092CA2F /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E886C74E265404ED0092CA2F /* ItemCollectionViewCell.swift */; };
+		E886C751265404ED0092CA2F /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E886C74F265404ED0092CA2F /* ItemCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,9 @@
 		772F58D6265199C4008DE687 /* HomeBigCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBigCollectionViewCell.swift; sourceTree = "<group>"; };
 		772F58D7265199C4008DE687 /* HomeBigCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeBigCollectionViewCell.xib; sourceTree = "<group>"; };
 		772F58DC26519C45008DE687 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		E886C73F2653F82E0092CA2F /* ItemDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDataModel.swift; sourceTree = "<group>"; };
+		E886C74E265404ED0092CA2F /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		E886C74F265404ED0092CA2F /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +202,9 @@
 			children = (
 				772F58D1265198A8008DE687 /* BrandViewController.swift */,
 				772F58D2265198A8008DE687 /* BrandViewController.xib */,
+				E886C73F2653F82E0092CA2F /* ItemDataModel.swift */,
+				E886C74E265404ED0092CA2F /* ItemCollectionViewCell.swift */,
+				E886C74F265404ED0092CA2F /* ItemCollectionViewCell.xib */,
 			);
 			path = Brand;
 			sourceTree = "<group>";
@@ -322,6 +331,7 @@
 				772F58B026518E10008DE687 /* MyPageViewController.xib in Resources */,
 				772F58CA2651987C008DE687 /* NewViewController.xib in Resources */,
 				772F58A126518DEC008DE687 /* StoreViewController.xib in Resources */,
+				E886C751265404ED0092CA2F /* ItemCollectionViewCell.xib in Resources */,
 				772F58AB26518E05008DE687 /* LikeViewController.xib in Resources */,
 				772F58D9265199C4008DE687 /* HomeBigCollectionViewCell.xib in Resources */,
 				771FB956264FA1420079BCF2 /* LaunchScreen.storyboard in Resources */,
@@ -345,7 +355,9 @@
 				772F58B726519642008DE687 /* UIView.swift in Sources */,
 				772F589A26518DDB008DE687 /* HomeViewController.swift in Sources */,
 				772F58BE2651973F008DE687 /* BarCollectionViewCell.swift in Sources */,
+				E886C7402653F82E0092CA2F /* ItemDataModel.swift in Sources */,
 				772F58AF26518E10008DE687 /* MyPageViewController.swift in Sources */,
+				E886C750265404ED0092CA2F /* ItemCollectionViewCell.swift in Sources */,
 				772F589226518CCF008DE687 /* BaseTabBarController.swift in Sources */,
 				772F58A026518DEC008DE687 /* StoreViewController.swift in Sources */,
 				772F58D8265199C4008DE687 /* HomeBigCollectionViewCell.swift in Sources */,
