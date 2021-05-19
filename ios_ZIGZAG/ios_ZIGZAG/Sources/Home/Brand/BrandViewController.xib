@@ -3,6 +3,7 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -70,25 +71,63 @@
                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </collectionViewFlowLayout>
                                 </collectionView>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TRe-Tx-TSw">
-                                    <rect key="frame" x="0.0" y="501" width="374.33333333333331" height="9"/>
+                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TRe-Tx-TSw">
+                                    <rect key="frame" x="0.0" y="501" width="374" height="7"/>
                                     <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="윤예빈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sq-Y1-LGj">
+                                    <rect key="frame" x="14" y="526" width="39" height="18"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="님을 위한 추천 아이템" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VR5-Mw-odw">
+                                    <rect key="frame" x="54" y="526" width="129" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtm-YG-KM6">
+                                    <rect key="frame" x="187" y="524" width="78" height="25"/>
+                                    <state key="normal" title="Button" image="icReset"/>
+                                </button>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="toZ-D1-yJT">
+                                    <rect key="frame" x="14" y="567" width="346.33333333333331" height="229"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="229" id="zBz-zS-MqM"/>
+                                    </constraints>
+                                </tableView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHK-ei-E1v">
+                                    <rect key="frame" x="0.0" y="866" width="374.33333333333331" height="7"/>
+                                    <color key="backgroundColor" name="grayScaleLightGray02"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngy-si-eey">
+                                    <rect key="frame" x="22" y="812" width="330.33333333333331" height="38"/>
+                                    <state key="normal" image="iosComponent01"/>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="SqX-0Q-fLa" firstAttribute="top" secondItem="Cn0-yh-z4z" secondAttribute="bottom" constant="16.600000000000001" id="0Yq-BS-Czt"/>
                                 <constraint firstAttribute="trailing" secondItem="Cn0-yh-z4z" secondAttribute="trailing" id="2gb-NA-WnP"/>
+                                <constraint firstItem="Ngy-si-eey" firstAttribute="top" secondItem="toZ-D1-yJT" secondAttribute="bottom" constant="16" id="3Sf-c6-6ml"/>
                                 <constraint firstItem="SqX-0Q-fLa" firstAttribute="leading" secondItem="vAR-bQ-nOA" secondAttribute="leading" constant="14" id="8X0-aa-Hgq"/>
                                 <constraint firstItem="kCc-M0-Edx" firstAttribute="leading" secondItem="SqX-0Q-fLa" secondAttribute="trailing" constant="1" id="AK4-tF-QmE"/>
                                 <constraint firstAttribute="trailing" secondItem="TRe-Tx-TSw" secondAttribute="trailing" id="B91-v1-uEB"/>
                                 <constraint firstItem="Arj-DV-U2d" firstAttribute="top" secondItem="v6j-gF-LLg" secondAttribute="bottom" constant="12.333333333333343" id="BQW-0Q-hGL"/>
+                                <constraint firstAttribute="trailing" secondItem="toZ-D1-yJT" secondAttribute="trailing" constant="14" id="BkX-Sy-Nlg"/>
+                                <constraint firstItem="zHK-ei-E1v" firstAttribute="centerX" secondItem="Ngy-si-eey" secondAttribute="centerX" id="CCh-ZT-h0f"/>
+                                <constraint firstItem="7sq-Y1-LGj" firstAttribute="top" secondItem="TRe-Tx-TSw" secondAttribute="bottom" constant="16" id="Eb0-PF-b25"/>
                                 <constraint firstItem="2d2-hT-0EA" firstAttribute="leading" secondItem="kCc-M0-Edx" secondAttribute="trailing" id="FzL-n1-aCe"/>
                                 <constraint firstItem="TRe-Tx-TSw" firstAttribute="leading" secondItem="vAR-bQ-nOA" secondAttribute="leading" id="IXV-51-cUC"/>
                                 <constraint firstItem="ehV-9o-dXD" firstAttribute="leading" secondItem="v6j-gF-LLg" secondAttribute="trailing" constant="3" id="Iv0-wn-FW8"/>
+                                <constraint firstItem="zHK-ei-E1v" firstAttribute="leading" secondItem="TRe-Tx-TSw" secondAttribute="leading" id="JsL-zE-4Wg"/>
+                                <constraint firstItem="toZ-D1-yJT" firstAttribute="top" secondItem="vAR-bQ-nOA" secondAttribute="top" constant="567" id="Lhc-cH-c81"/>
                                 <constraint firstItem="ehV-9o-dXD" firstAttribute="centerY" secondItem="v6j-gF-LLg" secondAttribute="centerY" id="RDs-dp-MK5"/>
                                 <constraint firstItem="Cn0-yh-z4z" firstAttribute="leading" secondItem="vAR-bQ-nOA" secondAttribute="leading" id="Tvf-ly-tjx"/>
                                 <constraint firstItem="2d2-hT-0EA" firstAttribute="top" secondItem="Cn0-yh-z4z" secondAttribute="bottom" constant="13.699999999999999" id="U0g-pe-T2G"/>
+                                <constraint firstAttribute="bottom" secondItem="zHK-ei-E1v" secondAttribute="bottom" constant="1299" id="WQ7-bQ-xgf"/>
                                 <constraint firstItem="TRe-Tx-TSw" firstAttribute="top" secondItem="Arj-DV-U2d" secondAttribute="bottom" constant="16" id="Wj2-Lv-ClZ"/>
                                 <constraint firstItem="Arj-DV-U2d" firstAttribute="leading" secondItem="vAR-bQ-nOA" secondAttribute="leading" constant="14" id="Yry-vF-Gxk"/>
                                 <constraint firstAttribute="bottom" secondItem="TRe-Tx-TSw" secondAttribute="bottom" constant="1662" id="buJ-KI-Aba"/>
@@ -96,11 +135,21 @@
                                 <constraint firstItem="Cn0-yh-z4z" firstAttribute="top" secondItem="vAR-bQ-nOA" secondAttribute="top" id="etZ-LE-Pmb"/>
                                 <constraint firstItem="kCc-M0-Edx" firstAttribute="top" secondItem="Cn0-yh-z4z" secondAttribute="bottom" constant="16.699999999999999" id="hPz-kg-jyc"/>
                                 <constraint firstItem="kCc-M0-Edx" firstAttribute="leading" secondItem="SqX-0Q-fLa" secondAttribute="trailing" constant="1" id="hSF-ka-I3Z"/>
+                                <constraint firstItem="wtm-YG-KM6" firstAttribute="leading" secondItem="VR5-Mw-odw" secondAttribute="trailing" constant="4" id="iCp-nY-KWS"/>
+                                <constraint firstItem="zHK-ei-E1v" firstAttribute="top" secondItem="Ngy-si-eey" secondAttribute="bottom" constant="16" id="ias-Md-XS4"/>
+                                <constraint firstItem="VR5-Mw-odw" firstAttribute="top" secondItem="TRe-Tx-TSw" secondAttribute="bottom" constant="16" id="m9r-5Z-dPd"/>
                                 <constraint firstItem="Arj-DV-U2d" firstAttribute="top" secondItem="vAR-bQ-nOA" secondAttribute="top" constant="262" id="mHZ-Bj-f0m"/>
+                                <constraint firstItem="VR5-Mw-odw" firstAttribute="leading" secondItem="7sq-Y1-LGj" secondAttribute="trailing" constant="1" id="oZL-fK-sAU"/>
+                                <constraint firstItem="toZ-D1-yJT" firstAttribute="top" secondItem="wtm-YG-KM6" secondAttribute="bottom" constant="18.100000000000001" id="pyk-Ch-qAc"/>
                                 <constraint firstItem="v6j-gF-LLg" firstAttribute="top" secondItem="Cn0-yh-z4z" secondAttribute="bottom" constant="13.699999999999999" id="uly-ak-awj"/>
+                                <constraint firstItem="Ngy-si-eey" firstAttribute="leading" secondItem="vAR-bQ-nOA" secondAttribute="leading" constant="22" id="urP-i4-Sru"/>
                                 <constraint firstItem="ehV-9o-dXD" firstAttribute="top" secondItem="Cn0-yh-z4z" secondAttribute="bottom" constant="13.699999999999999" id="vA1-P3-7FG"/>
                                 <constraint firstAttribute="trailing" secondItem="Arj-DV-U2d" secondAttribute="trailing" constant="14" id="vAT-aW-lOJ"/>
                                 <constraint firstAttribute="height" constant="2172" id="vAp-X2-cFl"/>
+                                <constraint firstItem="zHK-ei-E1v" firstAttribute="centerX" secondItem="toZ-D1-yJT" secondAttribute="centerX" id="vhV-1q-a7d"/>
+                                <constraint firstItem="7sq-Y1-LGj" firstAttribute="leading" secondItem="vAR-bQ-nOA" secondAttribute="leading" constant="14" id="xBm-VJ-UAX"/>
+                                <constraint firstItem="wtm-YG-KM6" firstAttribute="top" secondItem="TRe-Tx-TSw" secondAttribute="bottom" constant="14" id="y9w-Pj-jHQ"/>
+                                <constraint firstItem="toZ-D1-yJT" firstAttribute="leading" secondItem="vAR-bQ-nOA" secondAttribute="leading" constant="14" id="yHh-1M-NsT"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -136,7 +185,11 @@
         <image name="btnCheck" width="24" height="24.333333969116211"/>
         <image name="icReset" width="24" height="24.333333969116211"/>
         <image name="icTodaydelivery" width="75" height="19"/>
+        <image name="iosComponent01" width="330" height="37.333332061767578"/>
         <image name="rectangle42" width="375" height="211.33332824707031"/>
+        <namedColor name="grayScaleLightGray02">
+            <color red="0.86699998378753662" green="0.87800002098083496" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

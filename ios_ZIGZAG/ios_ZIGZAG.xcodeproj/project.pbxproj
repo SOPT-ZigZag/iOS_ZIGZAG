@@ -41,6 +41,8 @@
 		E886C7402653F82E0092CA2F /* ItemDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E886C73F2653F82E0092CA2F /* ItemDataModel.swift */; };
 		E886C750265404ED0092CA2F /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E886C74E265404ED0092CA2F /* ItemCollectionViewCell.swift */; };
 		E886C751265404ED0092CA2F /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E886C74F265404ED0092CA2F /* ItemCollectionViewCell.xib */; };
+		E89AB90E265570E200AE37DE /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AB90C265570E200AE37DE /* ItemTableViewCell.swift */; };
+		E89AB90F265570E200AE37DE /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89AB90D265570E200AE37DE /* ItemTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,8 @@
 		E886C73F2653F82E0092CA2F /* ItemDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDataModel.swift; sourceTree = "<group>"; };
 		E886C74E265404ED0092CA2F /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		E886C74F265404ED0092CA2F /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		E89AB90C265570E200AE37DE /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		E89AB90D265570E200AE37DE /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +206,8 @@
 			children = (
 				772F58D1265198A8008DE687 /* BrandViewController.swift */,
 				772F58D2265198A8008DE687 /* BrandViewController.xib */,
+				E89AB90C265570E200AE37DE /* ItemTableViewCell.swift */,
+				E89AB90D265570E200AE37DE /* ItemTableViewCell.xib */,
 				E886C73F2653F82E0092CA2F /* ItemDataModel.swift */,
 				E886C74E265404ED0092CA2F /* ItemCollectionViewCell.swift */,
 				E886C74F265404ED0092CA2F /* ItemCollectionViewCell.xib */,
@@ -341,6 +347,7 @@
 				771FB953264FA1420079BCF2 /* Assets.xcassets in Resources */,
 				772F58BF2651973F008DE687 /* BarCollectionViewCell.xib in Resources */,
 				772F589B26518DDB008DE687 /* HomeViewController.xib in Resources */,
+				E89AB90F265570E200AE37DE /* ItemTableViewCell.xib in Resources */,
 				772F58CF26519893008DE687 /* BestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +378,7 @@
 				772F58A526518DF8008DE687 /* MoaViewController.swift in Sources */,
 				772F58C326519870008DE687 /* HomeInViewController.swift in Sources */,
 				772F58BA2651966D008DE687 /* MenuBar.swift in Sources */,
+				E89AB90E265570E200AE37DE /* ItemTableViewCell.swift in Sources */,
 				772F58AA26518E05008DE687 /* LikeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

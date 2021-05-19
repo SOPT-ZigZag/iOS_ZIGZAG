@@ -26,23 +26,28 @@ class BrandViewController: UIViewController {
         let nibCell = UINib(nibName: itemCollectionCellID, bundle: nil)
         itemCollection.register(nibCell, forCellWithReuseIdentifier: itemCollectionCellID)
 
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
         
+        itemCollection.collectionViewLayout = layout
+
         setItemList()
-    
+        
+
     
     }
     
     func setItemList(){
         
-        items.append(contentsOf: [ItemDataModel(name: "인텐스", itemDes: "설명1", price: 35900, discount: false, percent: 0, itemImageName: "rectangle52", freeDelivery: true, fastDelivery: false),
+        items.append(contentsOf: [ItemDataModel(name: "인텐스", itemDes: "[셈디,미희 착용] 엘칸ㅇㅇㅇㅇ", price: 35900, discount: false, percent: 0, itemImageName: "rectangle52", freeDelivery: true, fastDelivery: false),
         
-                                  ItemDataModel(name: "인텐스", itemDes: "설명2", price: 129000, discount: true, percent: 72, itemImageName: "rectangle54", freeDelivery: true, fastDelivery: false),
+                                  ItemDataModel(name: "인텐스", itemDes: "[셈디,미희 착용] 엘칸ㅇㅇㅇㅇ", price: 129000, discount: true, percent: 72, itemImageName: "rectangle54", freeDelivery: true, fastDelivery: false),
                                   
-                                  ItemDataModel(name: "인텐스", itemDes: "설명3", price: 129000, discount: true, percent: 72, itemImageName: "rectangle53", freeDelivery: true, fastDelivery: true),
+                                  ItemDataModel(name: "인텐스", itemDes: "[셈디,미희 착용] 엘칸ㅇㅇㅇㅇ", price: 129000, discount: true, percent: 72, itemImageName: "rectangle53", freeDelivery: true, fastDelivery: true),
                                   
-                                  ItemDataModel(name: "인텐스", itemDes: "설명3", price: 129000, discount: true, percent: 72, itemImageName: "rectangle53", freeDelivery: true, fastDelivery: true),
+                                  ItemDataModel(name: "인텐스", itemDes: "[셈디,미희 착용] 엘칸ㅇㅇㅇㅇ", price: 129000, discount: true, percent: 72, itemImageName: "rectangle53", freeDelivery: true, fastDelivery: true),
                                   
-                                  ItemDataModel(name: "인텐스", itemDes: "설명3", price: 129000, discount: true, percent: 72, itemImageName: "rectangle53", freeDelivery: true, fastDelivery: true)
+                                  ItemDataModel(name: "인텐스", itemDes: "[셈디,미희 착용] 엘칸ㅇㅇㅇㅇ", price: 129000, discount: true, percent: 72, itemImageName: "rectangle53", freeDelivery: true, fastDelivery: true)
         ])
         
     }
@@ -70,7 +75,7 @@ extension BrandViewController: UICollectionViewDataSource {
         guard let itemCell = itemCollection.dequeueReusableCell(withReuseIdentifier: "ItemCollectionViewCell", for: indexPath)as? ItemCollectionViewCell else {return UICollectionViewCell()}
         
         
-        itemCell.setData(name: items[indexPath.row].name, itemDes: items[indexPath.row].itemDes, discount: items[indexPath.row].discount, percent: items[indexPath.row].percent, price: items[indexPath.row].percent, itemImageName: items[indexPath.row].itemImageName, freeDelivery: items[indexPath.row].freeDelivery, fastDelivery: items[indexPath.row].fastDelivery)
+        itemCell.setData(name: items[indexPath.row].name, itemDes: items[indexPath.row].itemDes, price: items[indexPath.row].price, discount: items[indexPath.row].discount, percent: items[indexPath.row].percent, itemImageName: items[indexPath.row].itemImageName, freeDelivery: items[indexPath.row].freeDelivery, fastDelivery: items[indexPath.row].fastDelivery)
         
         return itemCell
     
@@ -94,9 +99,12 @@ extension BrandViewController: UICollectionViewDelegateFlowLayout {
 
         let cellWidth = width * (111/375)
         let cellHeight = cellWidth * (221/111)
+        
                 
         return CGSize(width: cellWidth, height: cellHeight)
     }
+    
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets.zero
     }
@@ -109,8 +117,7 @@ extension BrandViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 1
     }
-    
-
+   
     
 }
 
