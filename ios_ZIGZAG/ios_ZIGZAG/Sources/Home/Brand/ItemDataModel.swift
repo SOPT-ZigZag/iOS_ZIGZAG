@@ -12,6 +12,7 @@ struct ItemDataModel {
     var itemDes : String
     var price : Int
     var discount : Bool
+    var discountPrice : Int
     var percent : Int
     var itemImageName : String
     var freeDelivery : Bool

@@ -1,48 +1,45 @@
 //
-//  ItemCollectionViewCell.swift
+//  SecondItemCollectionViewCell.swift
 //  ios_ZIGZAG
 //
-//  Created by kyoungjin on 2021/05/18.
+//  Created by kyoungjin on 2021/05/20.
 //
 
 import UIKit
 
-class ItemCollectionViewCell: UICollectionViewCell {
+class SecondItemCollectionViewCell: UICollectionViewCell {
     
-    static let identifier : String = "ItemCollectionViewCell"
+    static let identifier : String = "SecondItemCollectionViewCell"
 
 
     @IBOutlet weak var itemImage: UIImageView!
     @IBOutlet weak var itemName: UILabel!
+    
     @IBOutlet weak var itemDesc: UILabel!
+    
     @IBOutlet weak var discLabel: UILabel!
+    
     @IBOutlet weak var originalPrice: UILabel!
+    
     @IBOutlet weak var discPercent: UILabel!
     @IBOutlet weak var itemPrice: UILabel!
-    @IBOutlet weak var freeDeliv: UIImageView!
-    @IBOutlet weak var fastDeliv: UIImageView!
-    @IBOutlet weak var discountView: UIView!
+    
+    @IBOutlet weak var freeDeliv: UIButton!
+    @IBOutlet weak var fastDeliv: UIButton!
     
     @IBOutlet weak var heartButton: UIButton!
-    
-    @IBAction func heartClicked(_ sender: Any) {
-        heartButton.isHighlighted = true
-    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-    
-    
-    
-    
+
     
     func setData(name: String, itemDes: String, price: Int, discount : Bool, discountPrice: Int, percent: Int, itemImageName: String, freeDelivery: Bool, fastDelivery: Bool ) {
        
         //default setting
         itemName.text = name
         itemDesc.text = itemDes
-        heartButton.isHidden = false 
+        //heartButton.isHidden = false
         
         if let image = UIImage(named: itemImageName) {
             itemImage.image = image
@@ -53,7 +50,7 @@ class ItemCollectionViewCell: UICollectionViewCell {
             discLabel.isHidden = true
             discPercent.isHidden = true
             originalPrice.isHidden = true
-            discountView.isHidden = true
+            //discountView.isHidden = true
             //set price to the original price
             itemPrice.text = String(price)
         } else {
@@ -75,3 +72,5 @@ class ItemCollectionViewCell: UICollectionViewCell {
     
 
 }
+
+

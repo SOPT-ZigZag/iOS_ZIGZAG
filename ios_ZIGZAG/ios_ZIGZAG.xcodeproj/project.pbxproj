@@ -43,6 +43,10 @@
 		E886C751265404ED0092CA2F /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E886C74F265404ED0092CA2F /* ItemCollectionViewCell.xib */; };
 		E89AB90E265570E200AE37DE /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AB90C265570E200AE37DE /* ItemTableViewCell.swift */; };
 		E89AB90F265570E200AE37DE /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89AB90D265570E200AE37DE /* ItemTableViewCell.xib */; };
+		E89AB91726568A9A00AE37DE /* SecondItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AB91526568A9A00AE37DE /* SecondItemCollectionViewCell.swift */; };
+		E89AB91826568A9A00AE37DE /* SecondItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89AB91626568A9A00AE37DE /* SecondItemCollectionViewCell.xib */; };
+		E8E62DA02656A71F00B0CEFD /* ThirdItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E62D9E2656A71F00B0CEFD /* ThirdItemCollectionViewCell.swift */; };
+		E8E62DA12656A71F00B0CEFD /* ThirdItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E62D9F2656A71F00B0CEFD /* ThirdItemCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +88,10 @@
 		E886C74F265404ED0092CA2F /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		E89AB90C265570E200AE37DE /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		E89AB90D265570E200AE37DE /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		E89AB91526568A9A00AE37DE /* SecondItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		E89AB91626568A9A00AE37DE /* SecondItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		E8E62D9E2656A71F00B0CEFD /* ThirdItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		E8E62D9F2656A71F00B0CEFD /* ThirdItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdItemCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,10 +214,14 @@
 			children = (
 				772F58D1265198A8008DE687 /* BrandViewController.swift */,
 				772F58D2265198A8008DE687 /* BrandViewController.xib */,
+				E8E62D9E2656A71F00B0CEFD /* ThirdItemCollectionViewCell.swift */,
+				E8E62D9F2656A71F00B0CEFD /* ThirdItemCollectionViewCell.xib */,
 				E89AB90C265570E200AE37DE /* ItemTableViewCell.swift */,
 				E89AB90D265570E200AE37DE /* ItemTableViewCell.xib */,
 				E886C73F2653F82E0092CA2F /* ItemDataModel.swift */,
 				E886C74E265404ED0092CA2F /* ItemCollectionViewCell.swift */,
+				E89AB91526568A9A00AE37DE /* SecondItemCollectionViewCell.swift */,
+				E89AB91626568A9A00AE37DE /* SecondItemCollectionViewCell.xib */,
 				E886C74F265404ED0092CA2F /* ItemCollectionViewCell.xib */,
 			);
 			path = Brand;
@@ -340,6 +352,7 @@
 				E886C751265404ED0092CA2F /* ItemCollectionViewCell.xib in Resources */,
 				772F58AB26518E05008DE687 /* LikeViewController.xib in Resources */,
 				772F58D9265199C4008DE687 /* HomeBigCollectionViewCell.xib in Resources */,
+				E89AB91826568A9A00AE37DE /* SecondItemCollectionViewCell.xib in Resources */,
 				771FB956264FA1420079BCF2 /* LaunchScreen.storyboard in Resources */,
 				772F58A626518DF8008DE687 /* MoaViewController.xib in Resources */,
 				772F58D4265198A8008DE687 /* BrandViewController.xib in Resources */,
@@ -347,6 +360,7 @@
 				771FB953264FA1420079BCF2 /* Assets.xcassets in Resources */,
 				772F58BF2651973F008DE687 /* BarCollectionViewCell.xib in Resources */,
 				772F589B26518DDB008DE687 /* HomeViewController.xib in Resources */,
+				E8E62DA12656A71F00B0CEFD /* ThirdItemCollectionViewCell.xib in Resources */,
 				E89AB90F265570E200AE37DE /* ItemTableViewCell.xib in Resources */,
 				772F58CF26519893008DE687 /* BestViewController.xib in Resources */,
 			);
@@ -359,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8E62DA02656A71F00B0CEFD /* ThirdItemCollectionViewCell.swift in Sources */,
 				772F58B726519642008DE687 /* UIView.swift in Sources */,
 				772F589A26518DDB008DE687 /* HomeViewController.swift in Sources */,
 				772F58BE2651973F008DE687 /* BarCollectionViewCell.swift in Sources */,
@@ -376,6 +391,7 @@
 				772F58D3265198A8008DE687 /* BrandViewController.swift in Sources */,
 				772F58CE26519893008DE687 /* BestViewController.swift in Sources */,
 				772F58A526518DF8008DE687 /* MoaViewController.swift in Sources */,
+				E89AB91726568A9A00AE37DE /* SecondItemCollectionViewCell.swift in Sources */,
 				772F58C326519870008DE687 /* HomeInViewController.swift in Sources */,
 				772F58BA2651966D008DE687 /* MenuBar.swift in Sources */,
 				E89AB90E265570E200AE37DE /* ItemTableViewCell.swift in Sources */,

@@ -41,8 +41,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ3-mq-yjF">
                                 <rect key="frame" x="0.0" y="17" width="111" height="17"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="[셈디, 미희 착용]엘칸ㅇㅇㅇㅇㅇ " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOt-2v-ANA">
-                                        <rect key="frame" x="0.0" y="3" width="96" height="12"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[셈디, 미희 착용]엘칸ㅇㅇㅇㅇㅇ " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOt-2v-ANA">
+                                        <rect key="frame" x="0.0" y="2.5" width="96" height="12"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="12" id="S3S-I0-Tdy"/>
                                         </constraints>
@@ -53,13 +53,14 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="eOt-2v-ANA" firstAttribute="top" secondItem="ZZ3-mq-yjF" secondAttribute="top" constant="2.5" id="gIp-eM-heg"/>
+                                    <constraint firstAttribute="trailing" secondItem="eOt-2v-ANA" secondAttribute="trailing" constant="15" id="pqD-Hx-V7D"/>
                                     <constraint firstItem="eOt-2v-ANA" firstAttribute="leading" secondItem="ZZ3-mq-yjF" secondAttribute="leading" id="vA1-3Q-HZq"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bv-uD-q44">
                                 <rect key="frame" x="0.0" y="34" width="111" height="17.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Rr3-sq-v3M">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Rr3-sq-v3M">
                                         <rect key="frame" x="0.0" y="0.0" width="111" height="12"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제트할인가" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTp-pJ-VkD">
@@ -79,7 +80,9 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Rr3-sq-v3M" firstAttribute="leading" secondItem="8bv-uD-q44" secondAttribute="leading" id="35v-LG-A38"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rr3-sq-v3M" secondAttribute="bottom" constant="5.5" id="PfX-FL-6om"/>
                                     <constraint firstAttribute="trailing" secondItem="Rr3-sq-v3M" secondAttribute="trailing" id="aLb-0Y-2il"/>
+                                    <constraint firstItem="Rr3-sq-v3M" firstAttribute="top" secondItem="8bv-uD-q44" secondAttribute="top" id="hAs-Xo-KKm"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCg-ba-kgo">
@@ -89,14 +92,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="72%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hY5-Sg-3Wh">
-                                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="12"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="16"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                 <color key="textColor" name="brandBrandPink"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35,900" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQm-Ug-2J3">
-                                                <rect key="frame" x="37.5" y="0.0" width="37.5" height="12"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                                <rect key="frame" x="47.5" y="0.0" width="47.5" height="16"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -124,10 +127,10 @@
                         </subviews>
                     </stackView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7i-It-244">
-                        <rect key="frame" x="81.5" y="103" width="25.5" height="25.5"/>
+                        <rect key="frame" x="82" y="103" width="25" height="25"/>
                         <state key="normal" image="icLike"/>
                         <connections>
-                            <action selector="heartButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="MhM-4N-6X4"/>
+                            <action selector="heartClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="8VW-40-duk"/>
                         </connections>
                     </button>
                 </subviews>
@@ -163,7 +166,7 @@
     <resources>
         <image name="freeShipping" width="33" height="12"/>
         <image name="group54" width="40" height="12"/>
-        <image name="icLike" width="25.5" height="25.5"/>
+        <image name="icLike" width="25" height="25"/>
         <image name="rectangle53" width="111" height="132.5"/>
         <namedColor name="brandBrandPink">
             <color red="0.99199998378753662" green="0.21199999749660492" blue="0.61599999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
