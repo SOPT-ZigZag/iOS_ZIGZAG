@@ -8,6 +8,8 @@
 import UIKit
 
 class ShoppingTableViewCell: UITableViewCell {
+    
+    static let identifier: String = "ShoppingTableViewCell"
 
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var shopImageView: UIImageView!
@@ -31,6 +33,26 @@ class ShoppingTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setData(number : String,
+                 imageName : String,
+                 mainShop : String,
+                 subShop: String,
+                 dc: String,
+                 ranked: String,
+                 like: String)
+    {
+        numberLabel.text = number
+        if let image = UIImage(named: imageName)
+        {
+            shopImageView.image = image
+        }
+        firstShopLabel.text = mainShop
+        secondShopLabel.text = subShop
+        dcLabel.text = dc
+        rankLabel.text = ranked
+        likePersonLabel.text = like
     }
     
 }

@@ -1,19 +1,19 @@
 {
   "images" : [
     {
+      "filename" : "ellipse21.png",
       "scale" : "1x",
-      "idiom" : "universal",
-      "filename" : "ellipse19.png"
+      "idiom" : "universal"
     },
     {
       "idiom" : "universal",
-      "filename" : "ellipse19@2x.png",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "ellipse21@2x.png"
     },
     {
       "scale" : "3x",
-      "idiom" : "universal",
-      "filename" : "ellipse19@3x.png"
+      "filename" : "ellipse21@3x.png",
+      "idiom" : "universal"
     }
   ],
   "info" : {

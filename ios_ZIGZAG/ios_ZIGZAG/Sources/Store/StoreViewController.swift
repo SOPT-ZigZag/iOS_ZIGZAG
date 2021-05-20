@@ -7,14 +7,15 @@
 
 import UIKit
 
-class StoreViewController: UIViewController {
+class StoreViewController: UIViewController, UITableViewDelegate {
     
     @IBOutlet weak var storyCollectionView: UICollectionView!
-    let itemCollectionCellID = "shoppingCollectionViewCell"
+    let itemCollectionCellID = "storyCollectionViewCell"
     var storyList: [String] = []
     
     @IBOutlet weak var shoppingTableView: UITableView!
-    
+    let itemTableCellID = "shoppingTableViewCell"
+    var shoppingList: [ShoppingDataModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,16 +25,25 @@ class StoreViewController: UIViewController {
         storyCollectionView.delegate = self
         storyCollectionView.dataSource = self
 
-//        shoppingTableView.register(shoppingTableViewCell.nib(), forCellReuseIdentifier: "ShoppingTableViewCell")
-//        shoppingTableView.delegate = self
-//        shoppingTableView.dataSource = self
-//
         self.navigationController?.navigationBar.isHidden = true
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         storyCollectionView.collectionViewLayout = layout
         
-
+        setItemList()
+        shoppingTableView.register(ShoppingTableViewCell.nib(), forCellReuseIdentifier: "ShoppingTableViewCell")
+        shoppingTableView.delegate = self
+        shoppingTableView.dataSource = self
+        
+        let header = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 27))
+        let footer = UIImageView(frame: CGRect(x: 0, y: 15, width: view.frame.size.width, height: 40))
+        
+        let rankingImage = UIImage(named: "btnMore")
+        footer.image = rankingImage
+        footer.contentMode = .scaleAspectFit
+        
+        shoppingTableView.tableHeaderView = header
+        shoppingTableView.tableFooterView = footer
     }
     
     func setStoryList()
@@ -42,6 +52,19 @@ class StoreViewController: UIViewController {
             "component40", "component41", "component30", "component30",
         ])
     }
+    
+    func setItemList()
+    {
+        shoppingList.append(contentsOf: [
+            ShoppingDataModel(shopnumber: "1", shopimagename: "ellipse19", maintitle: "육육걸즈", subtitle: "심플베이직, 러블리", cupontitle: "최대 1,000원 쿠폰", ranktitle: "-", likepeople: "194.5만", color: UIColor.lightGray),
+            ShoppingDataModel(shopnumber: "2", shopimagename: "ellipse20", maintitle: "슬로우엔드", subtitle: "심플베이직, 러블리", cupontitle: "최대 1,000원 쿠폰", ranktitle: "+1", likepeople: "194.5만", color: UIColor.systemPink),
+            ShoppingDataModel(shopnumber: "1", shopimagename: "ellipse21", maintitle: "핫핑", subtitle: "심플베이직, 러블리", cupontitle: "최대 1,000원 쿠폰", ranktitle: "-1", likepeople: "194.5만", color: UIColor.blue),
+            ShoppingDataModel(shopnumber: "1", shopimagename: "ellipse22", maintitle: "아름다운", subtitle: "심플베이직, 러블리", cupontitle: "최대 1,000원 쿠폰", ranktitle: "-", likepeople: "194.5만", color: UIColor.lightGray),
+            ShoppingDataModel(shopnumber: "1", shopimagename: "ellipse23", maintitle: "고고씽", subtitle: "심플베이직, 러블리", cupontitle: "최대 1,000원 쿠폰", ranktitle: "-", likepeople: "194.5만", color: UIColor.lightGray)
+        ])
+        
+    }
+    
 }
 
 
@@ -66,7 +89,7 @@ extension StoreViewController: UICollectionViewDelegate
     
 }
 
-extension StoreViewController: UICollectionViewDelegateFlowLayout
+extension StoreViewController: UICollectionViewDelegateFlowLayout, UITableViewDataSource
 {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
@@ -85,24 +108,27 @@ extension StoreViewController: UICollectionViewDelegateFlowLayout
     
     // minimumLineSpacing 메서드: Cell 들의 위, 아래 간격 지정
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 8
+        return 7
     }
     
     // minimumInteritemSpacing 메서드: Cell 들의 좌,우 간격 지정
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 14
     }
     
     
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return categories.count
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "ShoppingTableViewCell", for: indexPath) as! ShoppingTableViewCell
-//
-//
-//        return cell
-//    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return shoppingList.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let shoppingCell = tableView.dequeueReusableCell(withIdentifier: ShoppingTableViewCell.identifier, for: indexPath) as? ShoppingTableViewCell else {return UITableViewCell() }
+        
+        shoppingCell.setData(number: shoppingList[indexPath.row].shopnumber, imageName: shoppingList[indexPath.row].shopimagename, mainShop: shoppingList[indexPath.row].maintitle, subShop: shoppingList[indexPath.row].subtitle, dc: shoppingList[indexPath.row].cupontitle, ranked: shoppingList[indexPath.row].ranktitle, like: shoppingList[indexPath.row].likepeople)
+        
+        shoppingCell.rankLabel.textColor = shoppingList[indexPath.row].color
+        
+        return shoppingCell
+    }
 }
 
