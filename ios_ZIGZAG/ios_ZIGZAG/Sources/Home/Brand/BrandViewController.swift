@@ -217,20 +217,18 @@ extension BrandViewController: UICollectionViewDelegateFlowLayout {
         if (collectionView == self.itemCollection) {
 
             let cellWidth = width * (110/375)
-            let cellHeight = cellWidth * (218/110)
         
-            return CGSize(width: cellWidth, height: cellHeight)
+            return CGSize(width: cellWidth, height: 218)
             
         } else if (collectionView == self.SecondItemCollection) {
             let cellWidth = width * (105/375)
-            let cellHeight = cellWidth * (214/105)
-            return CGSize(width: cellWidth, height: cellHeight)
+
+            return CGSize(width: cellWidth, height: 214)
         }
         
         else {
             let cellWidth = width * (160/375)
-            let cellHeight = cellWidth * (274/160)
-            return CGSize(width: cellWidth, height: cellHeight)
+            return CGSize(width: cellWidth, height: 274)
 
         }
     }
