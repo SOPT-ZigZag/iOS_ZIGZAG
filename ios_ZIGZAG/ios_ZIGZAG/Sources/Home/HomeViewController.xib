@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -44,8 +44,8 @@
                     </constraints>
                     <state key="normal" image="ic_장바구니"/>
                 </button>
-                <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="yc5-DS-U36">
-                    <rect key="frame" x="85.333333333333314" y="44" width="240" height="32"/>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" text="" placeholder="검색어를 입력해주세요" translatesAutoresizingMaskIntoConstraints="NO" id="yc5-DS-U36">
+                    <rect key="frame" x="85.5" y="44" width="279" height="32"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="32" id="Ikw-d5-OPB"/>
                     </constraints>
