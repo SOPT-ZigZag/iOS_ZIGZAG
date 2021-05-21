@@ -36,6 +36,9 @@
                         <constraint firstAttribute="width" constant="54" id="pMX-Dz-L1m"/>
                     </constraints>
                     <state key="normal" image="ic_store story exit"/>
+                    <connections>
+                        <action selector="dismiss:" destination="-1" eventType="touchUpInside" id="Mn6-cw-6PI"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeg-QK-Ne2">
                     <rect key="frame" x="13" y="60" width="145" height="39"/>
@@ -62,7 +65,7 @@
                 <constraint firstItem="P0M-Jc-SRb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="47" id="5Qj-e3-58P"/>
                 <constraint firstItem="P0M-Jc-SRb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8ot-fG-WjU"/>
                 <constraint firstItem="xeg-QK-Ne2" firstAttribute="top" secondItem="P0M-Jc-SRb" secondAttribute="bottom" constant="11" id="GuQ-la-Vac"/>
-                <constraint firstItem="p3j-mP-NtY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="H31-Pf-PVh"/>
+                <constraint firstItem="p3j-mP-NtY" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="H31-Pf-PVh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xlt-Lo-a03" secondAttribute="trailing" constant="13" id="VIq-87-Lv6"/>
                 <constraint firstItem="p3j-mP-NtY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aUD-g5-Isf"/>
                 <constraint firstAttribute="bottom" secondItem="jGQ-j3-IAA" secondAttribute="bottom" constant="60" id="nBj-U4-uvm"/>

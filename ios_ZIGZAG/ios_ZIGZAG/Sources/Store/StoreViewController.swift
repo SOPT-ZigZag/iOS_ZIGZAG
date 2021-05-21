@@ -86,7 +86,11 @@ extension StoreViewController: UICollectionViewDataSource
 
 extension StoreViewController: UICollectionViewDelegate
 {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let nextVC = StoryViewController()
+        nextVC.modalPresentationStyle = .overFullScreen
+        self.present(nextVC, animated: true, completion: nil)
+    }
 }
 
 extension StoreViewController: UICollectionViewDelegateFlowLayout, UITableViewDataSource
