@@ -44,8 +44,8 @@
                     </constraints>
                     <state key="normal" image="ic_장바구니"/>
                 </button>
-                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="검색어를 입력해주세요" translatesAutoresizingMaskIntoConstraints="NO" id="yc5-DS-U36">
-                    <rect key="frame" x="85" y="44" width="240" height="32"/>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="yc5-DS-U36">
+                    <rect key="frame" x="85.333333333333314" y="44" width="240" height="32"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="32" id="Ikw-d5-OPB"/>
                     </constraints>
