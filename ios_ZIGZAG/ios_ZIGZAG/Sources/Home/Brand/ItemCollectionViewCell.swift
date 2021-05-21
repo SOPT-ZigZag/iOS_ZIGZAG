@@ -26,7 +26,14 @@ class ItemCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var heartButton: UIButton!
     
     @IBAction func heartClicked(_ sender: Any) {
-        heartButton.isHighlighted = true
+        let blankHeart = UIImage(named:"icLike")
+        
+        
+        if (heartButton.currentImage == blankHeart) {
+        heartButton.setImage(UIImage(named: "icLikeClicked"), for: UIControl.State.normal)
+        } else {
+            heartButton.setImage(blankHeart, for: UIControl.State.normal)
+        }
     }
     override func awakeFromNib() {
         super.awakeFromNib()

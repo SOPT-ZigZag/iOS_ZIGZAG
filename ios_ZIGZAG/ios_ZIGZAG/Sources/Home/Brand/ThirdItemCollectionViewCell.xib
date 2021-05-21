@@ -103,12 +103,15 @@
                             </view>
                         </subviews>
                     </stackView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle50" translatesAutoresizingMaskIntoConstraints="NO" id="Nw6-dE-p39">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="three1" translatesAutoresizingMaskIntoConstraints="NO" id="Nw6-dE-p39">
                         <rect key="frame" x="0.0" y="0.0" width="160" height="192"/>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlK-3Y-f50">
                         <rect key="frame" x="131" y="164" width="25" height="25"/>
                         <state key="normal" image="icLike"/>
+                        <connections>
+                            <action selector="heartButtonClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="XNu-YM-XZH"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>
@@ -143,7 +146,7 @@
         <image name="freeShipping" width="33" height="12"/>
         <image name="group54" width="40" height="12"/>
         <image name="icLike" width="25" height="25"/>
-        <image name="rectangle50" width="110" height="132.5"/>
+        <image name="three1" width="160" height="192"/>
         <namedColor name="brandBrandPink">
             <color red="0.99199998378753662" green="0.21199999749660492" blue="0.61599999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

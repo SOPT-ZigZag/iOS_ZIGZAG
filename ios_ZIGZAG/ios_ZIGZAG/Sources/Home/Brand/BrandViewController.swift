@@ -31,6 +31,7 @@ class BrandViewController: UIViewController, UICollectionViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
         setTableList()
         setItemList()
@@ -65,6 +66,8 @@ class BrandViewController: UIViewController, UICollectionViewDelegate {
 
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
+        
+        
         itemCollection.collectionViewLayout = layout
         
         let secondLayout = UICollectionViewFlowLayout()
@@ -163,14 +166,13 @@ extension BrandViewController: UICollectionViewDataSource {
         return items.count
         }else if collectionView == self.SecondItemCollection {
             return secondItems.count
-        } //else {
-        //    return thirdItems.count
-       // }
+        }
         else {
             return thirdItems.count
         }
         
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
@@ -214,8 +216,8 @@ extension BrandViewController: UICollectionViewDelegateFlowLayout {
 
         if (collectionView == self.itemCollection) {
 
-            let cellWidth = width * (111/375)
-            let cellHeight = cellWidth * (215/111)
+            let cellWidth = width * (110/375)
+            let cellHeight = cellWidth * (218/110)
         
             return CGSize(width: cellWidth, height: cellHeight)
             

@@ -29,7 +29,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Esx-5O-z4l">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="Esx-5O-z4l">
                     <rect key="frame" x="0.33333333333334281" y="0.0" width="374.33333333333326" height="1299.3333333333333"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAR-bQ-nOA">
@@ -61,7 +61,7 @@
                                     <rect key="frame" x="183" y="224.66666666666666" width="24" height="24"/>
                                     <state key="normal" image="icReset"/>
                                 </button>
-                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Arj-DV-U2d">
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Arj-DV-U2d">
                                     <rect key="frame" x="14" y="262" width="346.33333333333331" height="223"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -121,7 +121,7 @@
                                     <color key="textColor" name="grayScaleLightGray02"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="agJ-pE-wQF">
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="agJ-pE-wQF">
                                     <rect key="frame" x="14" y="915" width="346.33333333333331" height="214"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
@@ -134,7 +134,7 @@
                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </collectionViewFlowLayout>
                                 </collectionView>
-                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gqn-Xc-lyn">
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gqn-Xc-lyn">
                                     <rect key="frame" x="22" y="1149" width="330.33333333333331" height="852"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="agY-7Y-hAV">

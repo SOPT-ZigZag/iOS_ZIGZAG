@@ -33,7 +33,19 @@ class ThirdItemCollectionViewCell: UICollectionViewCell {
 
 
 
+    @IBAction func heartButtonClicked(_ sender: Any) {
+        
+        let blankHeart = UIImage(named:"icLike")
+        
+        
+        if (heartButton.currentImage == blankHeart) {
+        heartButton.setImage(UIImage(named: "icLikeClicked"), for: UIControl.State.normal)
+        } else {
+            heartButton.setImage(blankHeart, for: UIControl.State.normal)
+        }
 
+    }
+    
 func setData(name: String, itemDes: String, price: Int, discount : Bool, discountPrice: Int, percent: Int, itemImageName: String, freeDelivery: Bool, fastDelivery: Bool ) {
    
     //default setting

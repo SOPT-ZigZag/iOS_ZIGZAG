@@ -32,6 +32,32 @@ class ItemTableViewCell: UITableViewCell {
         // Initialization code
     }
         
+    @IBAction func heartButtonClicked(_ sender: Any) {
+        let blankHeart = UIImage(named:"icLike")
+        
+        if (heartButton.currentImage == blankHeart) {
+        heartButton.setImage(UIImage(named: "icLikeClicked"), for: UIControl.State.normal)
+        } else {
+            heartButton.setImage(blankHeart, for: UIControl.State.normal)
+        }
+    
+    
+    }
+    @IBAction func basketButtonClicked(_ sender: Any) {
+    
+
+        let blankBasket = UIImage(named:"icShoppingBasket")
+        
+        if (basketButton.currentImage == blankBasket) {
+        basketButton.setImage(UIImage(named: "icShoppingBasketClicked"), for: UIControl.State.normal)
+        } else {
+            basketButton.setImage(blankBasket
+                                  , for: UIControl.State.normal)
+        }
+        
+    
+    
+    }
     static func nib() -> UINib {
             return UINib(nibName: "ItemTableViewCell", bundle: nil)
         
