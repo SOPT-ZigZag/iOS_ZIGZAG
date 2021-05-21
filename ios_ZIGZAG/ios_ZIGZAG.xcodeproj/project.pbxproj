@@ -52,6 +52,15 @@
 		77BB544F26579359005F0EA6 /* NotoSansKR-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77BB544926579359005F0EA6 /* NotoSansKR-Thin.otf */; };
 		77BB545026579359005F0EA6 /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77BB544A26579359005F0EA6 /* NotoSansKR-Bold.otf */; };
 		77BB545126579359005F0EA6 /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 77BB544B26579359005F0EA6 /* NotoSansKR-Medium.otf */; };
+		E886C7402653F82E0092CA2F /* ItemDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E886C73F2653F82E0092CA2F /* ItemDataModel.swift */; };
+		E886C750265404ED0092CA2F /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E886C74E265404ED0092CA2F /* ItemCollectionViewCell.swift */; };
+		E886C751265404ED0092CA2F /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E886C74F265404ED0092CA2F /* ItemCollectionViewCell.xib */; };
+		E89AB90E265570E200AE37DE /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AB90C265570E200AE37DE /* ItemTableViewCell.swift */; };
+		E89AB90F265570E200AE37DE /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89AB90D265570E200AE37DE /* ItemTableViewCell.xib */; };
+		E89AB91726568A9A00AE37DE /* SecondItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89AB91526568A9A00AE37DE /* SecondItemCollectionViewCell.swift */; };
+		E89AB91826568A9A00AE37DE /* SecondItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89AB91626568A9A00AE37DE /* SecondItemCollectionViewCell.xib */; };
+		E8E62DA02656A71F00B0CEFD /* ThirdItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E62D9E2656A71F00B0CEFD /* ThirdItemCollectionViewCell.swift */; };
+		E8E62DA12656A71F00B0CEFD /* ThirdItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E62D9F2656A71F00B0CEFD /* ThirdItemCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +111,15 @@
 		77BB544926579359005F0EA6 /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Thin.otf"; path = "../../../../../Downloads/Noto_Sans_KR/NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
 		77BB544A26579359005F0EA6 /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Bold.otf"; path = "../../../../../Downloads/Noto_Sans_KR/NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		77BB544B26579359005F0EA6 /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Medium.otf"; path = "../../../../../Downloads/Noto_Sans_KR/NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
+		E886C73F2653F82E0092CA2F /* ItemDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDataModel.swift; sourceTree = "<group>"; };
+		E886C74E265404ED0092CA2F /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		E886C74F265404ED0092CA2F /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		E89AB90C265570E200AE37DE /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		E89AB90D265570E200AE37DE /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		E89AB91526568A9A00AE37DE /* SecondItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		E89AB91626568A9A00AE37DE /* SecondItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		E8E62D9E2656A71F00B0CEFD /* ThirdItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		E8E62D9F2656A71F00B0CEFD /* ThirdItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdItemCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +250,15 @@
 			children = (
 				772F58D1265198A8008DE687 /* BrandViewController.swift */,
 				772F58D2265198A8008DE687 /* BrandViewController.xib */,
+				E8E62D9E2656A71F00B0CEFD /* ThirdItemCollectionViewCell.swift */,
+				E8E62D9F2656A71F00B0CEFD /* ThirdItemCollectionViewCell.xib */,
+				E89AB90C265570E200AE37DE /* ItemTableViewCell.swift */,
+				E89AB90D265570E200AE37DE /* ItemTableViewCell.xib */,
+				E886C73F2653F82E0092CA2F /* ItemDataModel.swift */,
+				E886C74E265404ED0092CA2F /* ItemCollectionViewCell.swift */,
+				E89AB91526568A9A00AE37DE /* SecondItemCollectionViewCell.swift */,
+				E89AB91626568A9A00AE37DE /* SecondItemCollectionViewCell.xib */,
+				E886C74F265404ED0092CA2F /* ItemCollectionViewCell.xib */,
 			);
 			path = Brand;
 			sourceTree = "<group>";
@@ -384,11 +411,13 @@
 				772F58A126518DEC008DE687 /* StoreViewController.xib in Resources */,
 				77BB544E26579359005F0EA6 /* NotoSansKR-Regular.otf in Resources */,
 				77BB545026579359005F0EA6 /* NotoSansKR-Bold.otf in Resources */,
+				E886C751265404ED0092CA2F /* ItemCollectionViewCell.xib in Resources */,
 				772F58AB26518E05008DE687 /* LikeViewController.xib in Resources */,
 				394F72D92652BD37005B9537 /* StoryCollectionViewCell.xib in Resources */,
 				772F58D9265199C4008DE687 /* HomeBigCollectionViewCell.xib in Resources */,
 				77BB544C26579359005F0EA6 /* NotoSansKR-Light.otf in Resources */,
 				77BB544D26579359005F0EA6 /* NotoSansKR-Black.otf in Resources */,
+				E89AB91826568A9A00AE37DE /* SecondItemCollectionViewCell.xib in Resources */,
 				771FB956264FA1420079BCF2 /* LaunchScreen.storyboard in Resources */,
 				77BB545126579359005F0EA6 /* NotoSansKR-Medium.otf in Resources */,
 				772F58A626518DF8008DE687 /* MoaViewController.xib in Resources */,
@@ -398,6 +427,8 @@
 				771FB953264FA1420079BCF2 /* Assets.xcassets in Resources */,
 				772F58BF2651973F008DE687 /* BarCollectionViewCell.xib in Resources */,
 				772F589B26518DDB008DE687 /* HomeViewController.xib in Resources */,
+				E8E62DA12656A71F00B0CEFD /* ThirdItemCollectionViewCell.xib in Resources */,
+				E89AB90F265570E200AE37DE /* ItemTableViewCell.xib in Resources */,
 				772F58CF26519893008DE687 /* BestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,11 +441,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				772F58E8265211CF008DE687 /* StoryViewController.swift in Sources */,
+				E8E62DA02656A71F00B0CEFD /* ThirdItemCollectionViewCell.swift in Sources */,
 				772F58B726519642008DE687 /* UIView.swift in Sources */,
 				772F589A26518DDB008DE687 /* HomeViewController.swift in Sources */,
 				772F58BE2651973F008DE687 /* BarCollectionViewCell.swift in Sources */,
 				39883E34265565A100914757 /* ShoppingDataModel.swift in Sources */,
+				E886C7402653F82E0092CA2F /* ItemDataModel.swift in Sources */,
 				772F58AF26518E10008DE687 /* MyPageViewController.swift in Sources */,
+				E886C750265404ED0092CA2F /* ItemCollectionViewCell.swift in Sources */,
 				772F589226518CCF008DE687 /* BaseTabBarController.swift in Sources */,
 				394F72DE2652BF26005B9537 /* ShoppingTableViewCell.swift in Sources */,
 				772F58A026518DEC008DE687 /* StoreViewController.swift in Sources */,
@@ -429,8 +463,10 @@
 				772F58CE26519893008DE687 /* BestViewController.swift in Sources */,
 				772F58A526518DF8008DE687 /* MoaViewController.swift in Sources */,
 				396292492654A9B100CEF8C3 /* StoryDataModel.swift in Sources */,
+				E89AB91726568A9A00AE37DE /* SecondItemCollectionViewCell.swift in Sources */,
 				772F58C326519870008DE687 /* HomeInViewController.swift in Sources */,
 				772F58BA2651966D008DE687 /* MenuBar.swift in Sources */,
+				E89AB90E265570E200AE37DE /* ItemTableViewCell.swift in Sources */,
 				772F58AA26518E05008DE687 /* LikeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
