@@ -16,11 +16,11 @@ class BaseTabBarController: UITabBarController, UITabBarControllerDelegate {
     let likeViewController  = LikeViewController()
     var mypageViewController = MyPageViewController()
     
-    let homeTabBarItem  = UITabBarItem(title: "홈", image: UIImage(systemName: "house"), tag: 0)
-    let storeTabBarItem = UITabBarItem(title: "스토어", image: UIImage(systemName: "star.fill"), tag: 1)
-    let moaTabBarItem  = UITabBarItem(title: "모아보기", image: UIImage(systemName: "line.horizontal.3"), tag: 2)
-    let likeTabBarItem  = UITabBarItem(title: "찜", image: UIImage(systemName: "magnifyingglass"), tag: 3)
-    let mypageTabBarItem  = UITabBarItem(title: "마이페이지", image: UIImage(systemName: "person.fill"), tag: 4)
+    let homeTabBarItem  = UITabBarItem(title: "홈", image: UIImage(named: "home_inactive"), tag: 0)
+    let storeTabBarItem = UITabBarItem(title: "스토어", image: UIImage(named: "store_inactive"), tag: 1)
+    let moaTabBarItem  = UITabBarItem(title: "모아보기", image: UIImage(named: "moa_inactive"), tag: 2)
+    let likeTabBarItem  = UITabBarItem(title: "찜", image: UIImage(named: "like_inactive"), tag: 3)
+    let mypageTabBarItem  = UITabBarItem(title: "마이페이지", image: UIImage(named: "mypage_inactive"), tag: 4)
     
     override func viewDidLoad() {
         super.viewDidLoad()
