@@ -68,7 +68,7 @@ class MenuBar: UIView,UICollectionViewDelegate, UICollectionViewDataSource,UICol
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BarCollectionViewCell", for: indexPath) as! BarCollectionViewCell
         cell.backgroundColor = .clear
-        cell.label.font = .NotoSans(.medium, size: 13)
+//        cell.label.font = .NotoSans(.medium, size: 13)
         cell.label.text = views[indexPath.item]
         return cell
     }

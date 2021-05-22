@@ -27,18 +27,18 @@ import UIKit
 
 extension UIFont {
     
-    public enum NotoSansType: String {
-        case black = "Black"
-        case bold = "Bold"
-        case light = "Light"
-        case medium = "Medium"
-        case regular = "Regular"
-        case thin = "Thin"
-    }
-
-    static func NotoSans(_ type: NotoSansType, size: CGFloat) -> UIFont {
-        return UIFont(name: "NotoSansKR-\(type.rawValue)", size: size)!
-    }
+//    public enum NotoSansType: String {
+//        case black = "Black"
+//        case bold = "Bold"
+//        case light = "Light"
+//        case medium = "Medium"
+//        case regular = "Regular"
+//        case thin = "Thin"
+//    }
+//
+//    static func NotoSans(_ type: NotoSansType, size: CGFloat) -> UIFont {
+//        return UIFont(name: "NotoSansKR-\(type.rawValue)", size: size)!
+//    }
 }
 
 
