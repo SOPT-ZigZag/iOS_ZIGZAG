@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -61,17 +61,17 @@
 		E89AB91826568A9A00AE37DE /* SecondItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89AB91626568A9A00AE37DE /* SecondItemCollectionViewCell.xib */; };
 		E8E62DA02656A71F00B0CEFD /* ThirdItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E62D9E2656A71F00B0CEFD /* ThirdItemCollectionViewCell.swift */; };
 		E8E62DA12656A71F00B0CEFD /* ThirdItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E62D9F2656A71F00B0CEFD /* ThirdItemCollectionViewCell.xib */; };
-		E96C4378FD7F2BC01A06ACA2 /* Pods_ios_ZIGZAG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E710FDD181EED177D9BFA8E1 /* Pods_ios_ZIGZAG.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16139340FCF8664D4464BE71 /* Pods_ios_ZIGZAG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_ZIGZAG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		394F72D62652BD37005B9537 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		394F72D72652BD37005B9537 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		394F72DC2652BF26005B9537 /* ShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewCell.swift; sourceTree = "<group>"; };
 		394F72DD2652BF26005B9537 /* ShoppingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShoppingTableViewCell.xib; sourceTree = "<group>"; };
 		396292482654A9B100CEF8C3 /* StoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDataModel.swift; sourceTree = "<group>"; };
 		39883E33265565A100914757 /* ShoppingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingDataModel.swift; sourceTree = "<group>"; };
-		664855BA51C7F7A262689E17 /* Pods-ios_ZIGZAG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_ZIGZAG.release.xcconfig"; path = "Target Support Files/Pods-ios_ZIGZAG/Pods-ios_ZIGZAG.release.xcconfig"; sourceTree = "<group>"; };
+		65AAE429BE8E87E204C86D5C /* Pods-ios_ZIGZAG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_ZIGZAG.debug.xcconfig"; path = "Target Support Files/Pods-ios_ZIGZAG/Pods-ios_ZIGZAG.debug.xcconfig"; sourceTree = "<group>"; };
 		771FB946264FA13F0079BCF2 /* ios_ZIGZAG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_ZIGZAG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		771FB949264FA13F0079BCF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		771FB94B264FA13F0079BCF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,8 +113,7 @@
 		77BB544926579359005F0EA6 /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Thin.otf"; path = "../../../../../Downloads/Noto_Sans_KR/NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
 		77BB544A26579359005F0EA6 /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Bold.otf"; path = "../../../../../Downloads/Noto_Sans_KR/NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		77BB544B26579359005F0EA6 /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Medium.otf"; path = "../../../../../Downloads/Noto_Sans_KR/NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
-		D7019DBCD17D6050C47879EC /* Pods-ios_ZIGZAG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_ZIGZAG.debug.xcconfig"; path = "Target Support Files/Pods-ios_ZIGZAG/Pods-ios_ZIGZAG.debug.xcconfig"; sourceTree = "<group>"; };
-		E710FDD181EED177D9BFA8E1 /* Pods_ios_ZIGZAG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_ZIGZAG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79EA6FE672DF6884889B3A8 /* Pods-ios_ZIGZAG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_ZIGZAG.release.xcconfig"; path = "Target Support Files/Pods-ios_ZIGZAG/Pods-ios_ZIGZAG.release.xcconfig"; sourceTree = "<group>"; };
 		E886C73F2653F82E0092CA2F /* ItemDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDataModel.swift; sourceTree = "<group>"; };
 		E886C74E265404ED0092CA2F /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		E886C74F265404ED0092CA2F /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -131,20 +130,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E96C4378FD7F2BC01A06ACA2 /* Pods_ios_ZIGZAG.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CF86BAA696CDBAF7E5D8AE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65AAE429BE8E87E204C86D5C /* Pods-ios_ZIGZAG.debug.xcconfig */,
+				A79EA6FE672DF6884889B3A8 /* Pods-ios_ZIGZAG.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		771FB93D264FA13F0079BCF2 = {
 			isa = PBXGroup;
 			children = (
 				771FB948264FA13F0079BCF2 /* ios_ZIGZAG */,
 				771FB947264FA13F0079BCF2 /* Products */,
-				B9791127B8C004ABFBF9E224 /* Pods */,
-				E9AE265DA3EFB3F81E12550F /* Frameworks */,
+				5CF86BAA696CDBAF7E5D8AE4 /* Pods */,
+				E27CD8D60DE9034B81634A34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -354,20 +361,10 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		B9791127B8C004ABFBF9E224 /* Pods */ = {
+		E27CD8D60DE9034B81634A34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D7019DBCD17D6050C47879EC /* Pods-ios_ZIGZAG.debug.xcconfig */,
-				664855BA51C7F7A262689E17 /* Pods-ios_ZIGZAG.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		E9AE265DA3EFB3F81E12550F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E710FDD181EED177D9BFA8E1 /* Pods_ios_ZIGZAG.framework */,
+				16139340FCF8664D4464BE71 /* Pods_ios_ZIGZAG.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -379,11 +376,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 771FB95A264FA1420079BCF2 /* Build configuration list for PBXNativeTarget "ios_ZIGZAG" */;
 			buildPhases = (
-				5C3D8255E9A3553B62383119 /* [CP] Check Pods Manifest.lock */,
+				CACFB5B9C40D5CF70DAE19AE /* [CP] Check Pods Manifest.lock */,
 				771FB942264FA13F0079BCF2 /* Sources */,
 				771FB943264FA13F0079BCF2 /* Frameworks */,
 				771FB944264FA13F0079BCF2 /* Resources */,
-				90D243EC4D0237E5EFEC67C7 /* [CP] Embed Pods Frameworks */,
+				D32704F5FFC99B1C7E30BC94 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -463,7 +460,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5C3D8255E9A3553B62383119 /* [CP] Check Pods Manifest.lock */ = {
+		CACFB5B9C40D5CF70DAE19AE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -485,7 +482,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		90D243EC4D0237E5EFEC67C7 /* [CP] Embed Pods Frameworks */ = {
+		D32704F5FFC99B1C7E30BC94 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -672,7 +669,7 @@
 		};
 		771FB95B264FA1420079BCF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7019DBCD17D6050C47879EC /* Pods-ios_ZIGZAG.debug.xcconfig */;
+			baseConfigurationReference = 65AAE429BE8E87E204C86D5C /* Pods-ios_ZIGZAG.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -692,7 +689,7 @@
 		};
 		771FB95C264FA1420079BCF2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 664855BA51C7F7A262689E17 /* Pods-ios_ZIGZAG.release.xcconfig */;
+			baseConfigurationReference = A79EA6FE672DF6884889B3A8 /* Pods-ios_ZIGZAG.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

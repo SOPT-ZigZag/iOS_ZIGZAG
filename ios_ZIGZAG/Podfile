@@ -6,6 +6,5 @@ target 'ios_ZIGZAG' do
   use_frameworks!
 
   # Pods for ios_ZIGZAG
-
 	pod 'Alamofire', '~> 5.2'
 end
