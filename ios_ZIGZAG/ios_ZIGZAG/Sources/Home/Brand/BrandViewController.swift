@@ -14,7 +14,7 @@ class BrandViewController: UIViewController, UICollectionViewDelegate {
     @IBOutlet weak var itemCollection: UICollectionView!
     @IBOutlet weak var SecondItemCollection: UICollectionView!
     @IBOutlet weak var ThirdItemCollection: UICollectionView!
-    
+    @IBOutlet weak var banner: UIImageView!
     
     let itemTableCellID = "ItemTableViewCell"
     let itemCollectionCellID = "ItemCollectionViewCell"
@@ -31,6 +31,25 @@ class BrandViewController: UIViewController, UICollectionViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        GetBannerDataService.shared.getBannerInfo { [self] (response) in
+            switch (response) {
+            case .success(let bannerData):
+                if let data = bannerData as? Banner {
+                    
+                    self.banner.image = UIImage(named: data.img)
+                    
+                }
+            case .requestErr(let message):
+                print("requestERR", message)
+            case .pathErr:
+                print("pathERR")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
 
         
         setTableList()

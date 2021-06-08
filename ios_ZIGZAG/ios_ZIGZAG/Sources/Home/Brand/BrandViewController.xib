@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="SecondItemCollection" destination="agJ-pE-wQF" id="uIM-Vs-43m"/>
                 <outlet property="ThirdItemCollection" destination="gqn-Xc-lyn" id="Ytp-d1-iiG"/>
+                <outlet property="banner" destination="Cn0-yh-z4z" id="r5r-BF-Hv0"/>
                 <outlet property="itemCollection" destination="Arj-DV-U2d" id="uNz-E4-8Ac"/>
                 <outlet property="itemTableView" destination="toZ-D1-yJT" id="I1q-YY-f8k"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -227,7 +228,7 @@
                 <constraint firstItem="Esx-5O-z4l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Qrf-aK-K6b"/>
                 <constraint firstItem="ToN-S5-UZ0" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="WE9-9C-fdU"/>
             </constraints>
-            <point key="canvasLocation" x="101.59999999999999" y="99.753694581280797"/>
+            <point key="canvasLocation" x="145" y="589"/>
         </view>
     </objects>
     <resources>
