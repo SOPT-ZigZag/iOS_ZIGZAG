@@ -16,7 +16,7 @@ struct GetBannerDataService
     
     func getBannerInfo(completion: @escaping (NetworkResult<Any>) -> Void) {
         
-        let URL = "18.217.241.233:5000/api/main/banner"
+        let URL = "http://18.217.241.233:5000/api/main/banner"
         let header : HTTPHeaders = ["Content-Type": "application/json"]
         
         let dataRequest = AF.request(URL, method: .get, encoding: JSONEncoding.default, headers: header)

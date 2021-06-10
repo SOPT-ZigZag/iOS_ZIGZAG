@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ItemTableViewCell: UITableViewCell {
 
@@ -86,6 +87,19 @@ class ItemTableViewCell: UITableViewCell {
             itemImage.image = image
         }
         
+        //서버에서 받은 이미지로 상품 보여주기
+        /*let url = URL(string: itemImageName)
+        
+        do {
+        let data = try Data(contentsOf: url!)
+        itemImage.image = UIImage(data: data)
+            
+        }
+        catch {
+            print(error.localizedDescription)
+        }*/
+        
+    
         //if item is not on discount
         if discount == false {
             discLabel.isHidden = true
@@ -108,6 +122,8 @@ class ItemTableViewCell: UITableViewCell {
         }
         
     }
+    
+    
     
     
     

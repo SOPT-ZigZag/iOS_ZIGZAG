@@ -14,7 +14,7 @@ struct GetItemDataService {
     static let shared = GetItemDataService()
     
     func getItemInfo(completion: @escaping(NetworkResult<Any>) -> Void) {
-        let URL = "18.217.241.233:5000/api/main/item"
+        let URL = "http://18.217.241.233:5000/api/main/item"
         let header : HTTPHeaders = ["Content-Type": "application/json"]
         
         let dataRequest = AF.request(URL, method: .get, encoding: JSONEncoding.default, headers: header)

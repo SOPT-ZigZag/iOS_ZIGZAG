@@ -26,18 +26,29 @@ class BrandViewController: UIViewController, UICollectionViewDelegate {
     var itemsTable : [ItemDataModel] = []
     var secondItems = [ItemDataModel]()
     var thirdItems = [ItemDataModel]()
-
+    
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //아직 랜덤은 구현
         GetBannerDataService.shared.getBannerInfo { [self] (response) in
             switch (response) {
             case .success(let bannerData):
                 if let data = bannerData as? Banner {
                     
-                    self.banner.image = UIImage(named: data.img)
+                    
+                    let url = URL(string: data.img)
+                    
+                    do {
+                    let image = try Data(contentsOf: url!)
+                        self.banner.image = UIImage(data: image)
+                        
+                    }
+                    catch {
+                        print(error.localizedDescription)
+                    }
                     
                 }
             case .requestErr(let message):
@@ -100,16 +111,57 @@ class BrandViewController: UIViewController, UICollectionViewDelegate {
     
     
   func setTableList(){
+    
+    var brandName = ""
+    GetItemDataService.shared.getItemInfo { [self] (response) in
         
-       itemsTable.append(contentsOf: [
-                                  ItemDataModel(name: "인텐스", itemDes: "[모델소장, 기획특가]베이브 탄탄 여리넥하프ㅇㅇㅇ", price: 129000, discount: true, discountPrice: 39000, percent: 72, itemImageName: "table1", freeDelivery: true, fastDelivery: false),
+        switch (response) {
+        case .success(let itemData):
+            if let data = itemData as? Items {
+                
+                print(brandName)
+                print("성공")
+                
+                
+                /*
+                self.itemsTable.append(contentsOf: [
+                                    
+                    ItemDataModel(name: "인텐스", itemDes: "[모델소장, 기획특가]베이브 탄탄 여리넥하프ㅇㅇㅇ", price: 129000, discount: true, discountPrice: 39000, percent: 72, itemImageName: "table1", freeDelivery: true, fastDelivery: false),
+                    
+                    ItemDataModel(name: "인텐스", itemDes: "[모델소장, 기획특가]베이브 탄탄 여리넥하프ㅇㅇㅇ", price: 129000, discount: true, discountPrice: 39000, percent: 72, itemImageName: "table2", freeDelivery: false, fastDelivery: false),
+                    
+                    ItemDataModel(name: "인텐스", itemDes: "[모델소장, 기획특가]베이브 탄탄 여리넥하프ㅇㅇㅇ", price: 129000, discount: true, discountPrice: 39000, percent: 72, itemImageName: "table3", freeDelivery: true, fastDelivery: true)])
+ 
+ */
+        
+            }
+            
+            //print("오잉")
+            
+            
+            
+            case .requestErr(let message):
+                print("requestERR", message)
+            case .pathErr:
+                print("pathERR")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+    }
+      
+    
+        print(brandName)
+        self.itemsTable.append(contentsOf: [
+                                  ItemDataModel(name: brandName, itemDes: "[모델소장, 기획특가]베이브 탄탄 여리넥하프ㅇㅇㅇ", price: 129000, discount: true, discountPrice: 39000, percent: 72, itemImageName: "table1", freeDelivery: true, fastDelivery: false),
                                   
                                   ItemDataModel(name: "인텐스", itemDes: "[모델소장, 기획특가]베이브 탄탄 여리넥하프ㅇㅇㅇ", price: 129000, discount: true, discountPrice: 39000, percent: 72, itemImageName: "table2", freeDelivery: false, fastDelivery: false),
                                   
                                   ItemDataModel(name: "인텐스", itemDes: "[모델소장, 기획특가]베이브 탄탄 여리넥하프ㅇㅇㅇ", price: 129000, discount: true, discountPrice: 39000, percent: 72, itemImageName: "table3", freeDelivery: true, fastDelivery: true)
                                   
         ])
-
+ 
     }
  
     func setItemList(){

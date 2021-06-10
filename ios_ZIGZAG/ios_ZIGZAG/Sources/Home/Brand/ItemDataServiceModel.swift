@@ -12,22 +12,22 @@ struct ItemDataServiceModel: Codable {
     let status: Int
     let success: Bool
     let message: String
-    let data: DataClass
+    let data: Items
 }
 
 // MARK: - DataClass
-struct DataClass: Codable {
+struct Items: Codable {
     let item: [Item]
 }
 
 // MARK: - Item
 struct Item: Codable {
-    let id: String
-    let img: String
-    let itemIdx: Int
-    let brandName, itemName: String
-    let price, discountIdx, deliveryIdx: Int
-    let deliveryToday: Bool
+    let id: String?
+    let img: String?
+    let itemIdx: Int?
+    let brandName, itemName: String?
+    let price, discountIdx, deliveryIdx: Int?
+    let deliveryToday: Bool?
 
     enum CodingKeys: String, CodingKey {
         case id = "_id"
